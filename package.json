@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@firebase/firestore": "^4.6.3",
     "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.12.1",
     "hamburger-react": "^2.5.1",
     "next": "latest",
     "react": "latest",
     "react-countup": "^6.5.3",
     "react-dom": "latest",
+    "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "latest",
