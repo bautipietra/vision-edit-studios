@@ -25,12 +25,13 @@ export default function Hero() {
   return (
     <div className='grid w-full justify-center gap-8 md:gap-24 px-4'>
       <div className='grid gap-6 max-w-xl text-center justify-center items-center m-auto mt-12'>
-        <Tittle>
+        <h1
+          className={`text-6xl max-md:text-4xl font-black text-center text-balance  ${poppins.className}`}>
           <span className='text-purple-500'>EDICIÓN</span> DE VÍDEOS{' '}
           <span className='border-b-4 border-purple-500'>
             PROFESIONAL
           </span>
-        </Tittle>
+        </h1>
         <p className='text-lg'>
           +<span id='counter1'>0</span> clientes que escalaron su
           perfil gracias a nuestra edición y +
@@ -63,8 +64,8 @@ export default function Hero() {
         <Image
           src={'/hero.jpeg'}
           alt='Hero image'
-          width={1000}
-          height={1000}
+          width={1100}
+          height={700}
           className='w-full drop-shadow-[0_-35px_100px_rgba(168,85,247,0.25)] overflow-hidden rounded-3xl'></Image>
       </AnimatedCard>
     </div>

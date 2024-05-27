@@ -8,8 +8,9 @@ import { Toaster } from 'react-hot-toast'
 const raleway = Raleway({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
-  title: 'Visual Edit Studios',
-  description: 'Agencia de Edición de Videos'
+  title: 'Vision Edit Studios',
+  description:
+    'En Vision Edit Studios, con más de 2 años de experiencia, transformamos tus ideas en arte visual. Nuestro equipo de profesionales en edición de video y foto se dedica a crear estilos únicos y ayudarte a destacar en el mundo digital. Ofrecemos servicios personalizados y un curso exclusivo para dominar el diseño gráfico. ¡Mejora tu perfil con nosotros!'
 }
 
 export default function RootLayout({

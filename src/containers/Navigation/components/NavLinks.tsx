@@ -8,16 +8,16 @@ export default function NavLinks({ setOpen }: any) {
       link: '/'
     },
     {
+      name: 'Nosotros',
+      link: '#about'
+    },
+    {
       name: 'Cursos',
       link: '#courses'
     },
     {
       name: 'Servicios',
       link: '#services'
-    },
-    {
-      name: 'Sobre Nosotros',
-      link: '#about'
     }
   ]
 

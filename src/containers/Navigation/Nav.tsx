@@ -19,10 +19,10 @@ export default function Nav() {
         <div className='max-w-7xl pt-8 m-auto px-4'>
           <nav className='flex justify-between items-center'>
             <Link href='/'>
-              <h1
+              <h2
                 className={`text-4xl font-extrabold text-white ${poppins.className}`}>
                 VISION EDIT
-              </h1>
+              </h2>
             </Link>
             <div className='text-white flex gap-2 font-light text-lg max-lg:hidden'>
               <NavLinks></NavLinks>

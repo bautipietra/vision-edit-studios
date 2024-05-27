@@ -2,6 +2,7 @@
 import Tittle from '@/components/Tittle'
 import db from '@/utils/fb'
 import { addDoc, collection } from '@firebase/firestore'
+import { log } from 'console'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
@@ -32,7 +33,15 @@ export default function Contact() {
         date: formattedDate,
         id: uuidv4()
       }
-      const added = addDoc(collection(db, 'messages'), data)
+      const added = fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ data })
+      })
+
+      console.log(added)
 
       toast.promise(added, {
         loading: 'Enviando mensaje...',

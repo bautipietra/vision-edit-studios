@@ -9,9 +9,9 @@ export default function HomePage() {
   return (
     <div className='grid gap-20'>
       <Hero></Hero>
+      <About></About>
       <Courses></Courses>
       <Services></Services>
-      <About></About>
       <Contact></Contact>
     </div>
   )

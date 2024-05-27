@@ -11,10 +11,10 @@ export default function Footer() {
       <div className='mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8'>
         <div className='flex justify-center text-teal-600'>
           <Link href='/'>
-            <h1
+            <h3
               className={`text-4xl font-extrabold text-white ${poppins.className}`}>
-              VISION EDIT
-            </h1>
+              VISION EDIT STUDIOS
+            </h3>
           </Link>
         </div>
 
