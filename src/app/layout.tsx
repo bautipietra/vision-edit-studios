@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Raleway } from 'next/font/google'
 import Footer from '@/containers/Navigation/Footer'
 import { Toaster } from 'react-hot-toast'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const raleway = Raleway({ subsets: ['latin'], weight: '400' })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         </main>
         <Footer></Footer>
       </body>
+      <GoogleAnalytics gaId='G-JVEQ71PWZ5' />
     </html>
   )
 }
