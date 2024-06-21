@@ -23,12 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es'>
-      <Head>
-        <Script
-          id='fb-pixel'
-          strategy='afterInteractive'
-          dangerouslySetInnerHTML={{
-            __html: `
+      <Script
+        id='fb-pixel'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -40,9 +39,8 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1464641741092487');
 fbq('track', 'PageView');
 `
-          }}
-        />
-      </Head>
+        }}
+      />
       <body
         className={`${raleway.className} overflow-x-hidden relative`}>
         <Toaster></Toaster>
