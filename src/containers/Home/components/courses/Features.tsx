@@ -5,6 +5,25 @@ import React from 'react'
 import FeaturesItems from './FeaturesItems'
 
 export default function Features() {
+  const track = (event: string, params?: Record<string, any>) => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', event, params)
+    }
+  }
+
+  const handleClickPaypal = () => {
+    track('Purchase', {
+      value: 8.99,
+      currency: 'USD'
+    })
+  }
+
+  const handleClickMP = () => {
+    track('Purchase', {
+      value: 9000,
+      currency: 'ARS'
+    })
+  }
   return (
     <section>
       <div className='mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8 relative'>
@@ -41,6 +60,7 @@ export default function Features() {
               <div className='mt-4 md:mt-8 flex items-center justify-center'>
                 <Link
                   href={'https://www.paypal.me/RaDiicK04'}
+                  onClick={handleClickPaypal}
                   target='_blank'
                   className='text-gray-900 h-14 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 mr-2 mb-2'>
                   <Image
@@ -51,6 +71,7 @@ export default function Features() {
                 </Link>
                 <Link
                   href={'https://mpago.la/1VGCnT7'}
+                  onClick={handleClickMP}
                   target='_blank'
                   className='text-gray-900 h-14 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 mr-2 mb-2'>
                   <Image
