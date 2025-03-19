@@ -68,6 +68,11 @@ export default function Footer() {
             </svg>
           </Link>
         </div>
+
+              <div className='text-white text-center mt-12 max-md:grid'>
+          <span className='text-white'>Desarrollado por <Link href={'https://webty.com.ar'}
+            target='_blank' className='text-white'>Webty</Link></span>
+        </div>
       </div>
     </footer>
   )
